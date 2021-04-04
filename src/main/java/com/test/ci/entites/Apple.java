@@ -7,7 +7,7 @@ package com.test.ci.entites;
  * @Date 2021/4/4 16:48
  **/
 public class Apple {
-    private String appName="Goog Apple";
+    private String appName="Goog Apple   -Test";
     public String getAppName(){
         return appName;
     }
