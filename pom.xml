@@ -33,49 +33,49 @@
 	</dependencies>
 	
 	<!-- 配置当前工程构建过程中的特殊设置 -->
-	<build>
-		<finalName>AtguiguWeb</finalName>
+	<!--<build>-->
+	<!--<finalName>AtguiguWeb</finalName>-->
 
-		<!-- 配置构建过程中需要使用的插件 -->
-		<plugins>
-			<plugin>
-				<!-- cargo是一家专门从“启动Servlet容器”的组织 -->
-				<groupId>org.codehaus.cargo</groupId>
-				<artifactId>cargo-maven2-plugin</artifactId>
-				<version>1.6.6</version>
+	<!--&lt;!&ndash; 配置构建过程中需要使用的插件 &ndash;&gt;-->
+	<!--<plugins>-->
+		<!--<plugin>-->
+			<!--&lt;!&ndash; cargo是一家专门从“启动Servlet容器”的组织 &ndash;&gt;-->
+			<!--<groupId>org.codehaus.cargo</groupId>-->
+			<!--<artifactId>cargo-maven2-plugin</artifactId>-->
+			<!--<version>1.6.6</version>-->
 
-				<!-- 针对插件进行的配置 -->
-				<configuration>
-					<!-- 配置当前系统中容器的位置 -->
-					<container>
-						<containerId>tomcat6x</containerId>
-						<home>F:\apache-tomcat-9.0.8\apache-tomcat-9.0.8</home>
-					</container>
-					<configuration>
-						<type>existing</type>
-						<home>F:\apache-tomcat-9.0.8\apache-tomcat-9.0.8</home>
-						<!-- 如果Tomcat端口为默认值8080则不必设置该属性 -->
-						<!-- <properties>
-							<cargo.servlet.port>8989</cargo.servlet.port>
-						</properties> -->
-					</configuration>
-				</configuration>
+			<!--&lt;!&ndash; 针对插件进行的配置 &ndash;&gt;-->
+			<!--<configuration>-->
+				<!--&lt;!&ndash; 配置当前系统中容器的位置 &ndash;&gt;-->
+				<!--<container>-->
+					<!--<containerId>tomcat6x</containerId>-->
+					<!--<home>F:\apache-tomcat-9.0.8\apache-tomcat-9.0.8</home>-->
+				<!--</container>-->
+				<!--<configuration>-->
+					<!--<type>existing</type>-->
+					<!--<home>F:\apache-tomcat-9.0.8\apache-tomcat-9.0.8</home>-->
+					<!--&lt;!&ndash; 如果Tomcat端口为默认值8080则不必设置该属性 &ndash;&gt;-->
+					<!--&lt;!&ndash; <properties>-->
+                        <!--<cargo.servlet.port>8989</cargo.servlet.port>-->
+                    <!--</properties> &ndash;&gt;-->
+				<!--</configuration>-->
+			<!--</configuration>-->
 
-				<!-- 配置插件在什么情况下执行 -->
-				<executions>
-					<execution>
-						<id>cargo-run</id>
+			<!--&lt;!&ndash; 配置插件在什么情况下执行 &ndash;&gt;-->
+			<!--<executions>-->
+				<!--<execution>-->
+					<!--<id>cargo-run</id>-->
 
-						<!-- 生命周期的阶段 -->
-						<phase>install</phase>
-						<goals>
-							<!-- 插件的目标 -->
-							<goal>run</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+					<!--&lt;!&ndash; 生命周期的阶段 &ndash;&gt;-->
+					<!--<phase>install</phase>-->
+					<!--<goals>-->
+						<!--&lt;!&ndash; 插件的目标 &ndash;&gt;-->
+						<!--<goal>run</goal>-->
+					<!--</goals>-->
+				<!--</execution>-->
+			<!--</executions>-->
+		<!--</plugin>-->
+	<!--</plugins>-->
+<!--</build>-->
 
 </project>
